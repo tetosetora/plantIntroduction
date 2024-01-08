@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Zen Old Mincho', serif;
+  background-color:#fff;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+.inner {
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+
+section {
+  margin: 20px 0;
+  clear: both;
+}
+
+header {
+  background-color: #fff;
+  padding: 5px;
+  border-bottom:solid  rgb(0, 0, 0) 5px;
+}
+
+.logoLink {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+  color: #e6b422;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  font-family: 'Permanent Marker', cursive;
+  background-image: url(../images/plantIntroductionImages/kilogo.png);
+  background-size: cover;
+}
+
+.logoLink:hover{
+	background-position-y: -200px;
+	}
+
+h4{
+	font-size: 3em;
+	min-width: 205px;
+	color: rgb(0, 64, 0);
+}
+
+.table8{
+	border: none;
+	width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table8 td{
+	border: none;
+	width: 150px;
+}
+
+nav{
+	margin: 120px 0px 0px 0px
+}
+
+a {
+  transition: background-color 0.8s, color 0.8s;
+}
+
+.navLink {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: 700;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 30px 0;
+  background: linear-gradient(to right, #4caf5029, white);
+  border-bottom: solid;
+}
+
+.navLink:hover {
+  background-color: rgb(255, 213, 213);
+  color: #e69922;
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+	width: 200px;
+	text-align: center;
+  color: #fff;
+  background-image: radial-gradient( rgb(0, 64, 0), #fff);
+  border-radius: 100px;
+  padding: 7px;
+}
+
+.vdt{
+  text-decoration: none;
+  color: #336;
+}
+
+.vdt:hover{
+  color: #3f6;
+}
+
+
+h2 {
+  font-weight: 700;
+  font-size: 2em;
+  border-bottom: 2px solid rgb(0, 128, 0);
+  border-top: 5px solid rgb(0, 64, 0);
+  text-align: left;
+  padding-top: 20px;
+  margin-top: 30px;
+}
+
+#pageLink2 h3 {
+  background-image: radial-gradient( rgb(128, 255, 128), #fff);
+}
+
+#pageLink3 h3 {
+  background-image: radial-gradient( rgb(0, 128, 0), rgb(255, 255, 128));
+}
+
+#pageLink4 h3 {
+  background-image: radial-gradient( #8BC34A, rgb(255, 255, 128));
+}
+
+h3{
+  font-size: 1.4em;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  border-radius: 100px;
+  padding: 5px 0;
+  text-shadow: 1px 1px #00000080, 1px 0 #00000080, 1px -1px #00000080, 0 -1px #00000080, -1px -1px #00000080, -1px 0 #00000080, -1px 1px #00000080, 0 1px #00000080;
+}
+
+.text{
+  width: 800px;
+  line-height: 1.5;
+  padding: 5px;
+  margin-left: auto;
+}
+
+.aboutTitle {
+  background-image: url(../images/plantIntroductionImages/pencil.png);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 0 3px;
+  padding-left: 25px;
+}
+
+.aboutList {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.aboutListItem dl {
+  display: flex;
+}
+
+.aboutListItem dl dt {
+  width: 15%;
+}
+
+.itemImg {
+  float: left;
+  margin: 0 1em 20px 0;
+}
+
+.cardList {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardListItem {
+  width: 310px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  box-shadow: 2px 2px 2px #ccc;
+}
+
+.cardListItem:nth-child(3) {
+  margin-right: 0;
+}
+
+.cardList .title {
+  padding: 0 5px;
+}
+
+.cardList .text {
+  padding: 0 5px;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  margin-left: 30px;
+  border-radius: 50%;
+	transform: scale(1);
+	transition: .3s ease-in-out;
+}
+
+img:hover{
+  transform: scale(1.1);
+}
+
+table {
+  border: 2px solid #333;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 960px;
+}
+
+th {
+  border: 2px solid #333;
+  color: #fff;
+  background-color: #666;
+  padding: 5px;
+  width: 320px;
+}
+
+td {
+  border: 2px solid #333;
+  padding: 5px;
+}
+
+.scrollBox {
+  overflow-x: auto;
+}
+
+footer {
+  background-color: #afac4c;
+  border-top:solid  rgb(0, 0, 0) 5px ;
+  padding: 5px;
+  margin-top: 150px;
+}
+
+.copyright {
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.pageTop {
+  text-align: right;
+  position: fixed;
+  right: 20px;
+  bottom: 45px;
+}
+
+.pageTopLink {
+  display: inline-block;
+  width: 48px;
+  height: 44.5px;
+  background-image: url(../images/plantIntroductionImages/pagetop.png);
+  background-repeat: no-repeat;
+  background-size: 46px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.pageTopLink:hover {
+  background-position-y: -44.5px;
+}
+
